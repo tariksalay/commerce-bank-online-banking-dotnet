@@ -1,0 +1,62 @@
+﻿@model asp_core_mvc.ViewModels.ReportsModel
+
+@{
+    ViewBag.Title = "Reports";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<div class="container">
+    <form asp-action="Index">
+        <div class="row col-sm-3 mb-3">
+            <select class="form-control" asp-for=@Model.curAccount onchange="this.form.submit()">
+                @foreach (Int32 accountID in Model.accounts)
+                {
+                <option value=@accountID>Account ######@accountID.ToString().Substring(6)</option>
+                }
+            </select>
+        </div>
+    </form>
+</div>
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>Rule</th>
+            <th>Times Tripped Recently</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Reports report in Model.Reports)
+        {
+        <tr>
+            <td>@report.RuleReport</td>
+            <td>@report.TimesRecently</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<p>Previous Reports</p>
+
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Alerts Tripped in Time Period</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Reports report in Model.PrevReports)
+        {
+        <tr>
+            <td>@report.StartDate</td>
+            <td>@report.EndDate</td>
+            <td>@report.AlertsInTimePeriod</td>
+            <td><a asp-controller="Reports" asp-action="Export" asp-route-sd=@report.StartDate asp-route-ed=@report.EndDate 
+                   asp-route-accountID=@Model.curAccount>Export</a></td>
+        </tr>
+        }
+    </tbody>
+</table>

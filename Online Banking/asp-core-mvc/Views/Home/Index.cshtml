@@ -1,0 +1,72 @@
+﻿@model asp_core_mvc.ViewModels.HomeModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Online Banking</h1>
+    <p class="lead">An online banking web application.</p>
+</div>
+
+<div class="container">
+    <form asp-action="Index">
+        <div class="row col-sm-3 mb-3">
+            <select class="form-control" asp-for=@Model.curAccount onchange="this.form.submit()">
+                @foreach (Int32 accountID in Model.accounts)
+                {
+                <option value=@accountID>Account ######@accountID.ToString().Substring(6)</option>
+                }
+            </select>
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Recent Alerts</h2>  <!-- Recent 5 Alerts -->
+        <table class="table table-condensed table-hover">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Reason for Alert</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Alerts alert in Model.Alerts.Take(5))
+                {
+                    <tr>
+                        <td>@alert.TransDate</td>
+                        <td>@alert.Reason</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-3 text-center">
+        <h2>Account Balance</h2>
+        <h2>$@Model.Balance</h2>
+    </div>
+    <div class="col-md-5">
+        <h2>Recent Transactions</h2>
+        <table class="table table-condensed table-hover">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Transactions transaction in Model.Transactions.Take(10)) // first 10
+                {
+                    <tr>
+                        <td>@transaction.TransDate</td>
+                        <td>@transaction.TransDesc</td>
+                        <td>@String.Format("{0}{1:0.00}", transaction.TransType, transaction.Amount)</td>
+                        <td>@String.Format("{0:0.00}", transaction.Balance)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

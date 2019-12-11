@@ -1,0 +1,47 @@
+﻿@model asp_core_mvc.ViewModels.AlertsModel
+
+@{
+    ViewBag.Title = "Alerts";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<div class="container">
+    <form asp-action="Index">
+        <div class="row col-sm-3 mb-3">
+            <select class="form-control" asp-for=@Model.curAccount onchange="this.form.submit()">
+                @foreach (Int32 accountID in Model.accounts)
+                {
+                <option value=@accountID>Account ######@accountID.ToString().Substring(6)</option>
+                }
+            </select>
+        </div>
+    </form>
+</div>
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Reason for Alert</th>
+            <th>Desc</th>
+            <th>Location</th>
+            <th>Amount</th>
+            <th>Balance</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Alerts alert in Model.alerts)
+        {
+            <tr>
+                <td>@alert.TransDate</td>
+                <td>@alert.Reason</td>
+                <td>@alert.TransDesc</td>
+                <td>@alert.Location</td>
+                <td>@String.Format("{0}{1:0.00}", alert.TransType, alert.Amount)</td>
+                <td>@String.Format("{0:0.00}", alert.Balance)</td>
+                <td>@Html.ActionLink("Remove", "Remove", "Alerts", new { id = alert.AlertID })</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
