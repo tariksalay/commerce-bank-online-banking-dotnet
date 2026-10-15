@@ -1,53 +1,43 @@
-# CS451 Group 6 Project Overview
+# Online Banking Web Application — University Team Project
 
-[Ground Rules and Work Agreement](https://docs.google.com/document/d/1cfMtX7VBfya8j9n-NJiM30QzgLqE8wwRQGGHLZ1i5cs/edit?usp=sharing)
+**ASP.NET Core MVC · SQL · Web Application Design · Requirements & Test Documentation**
+
+A university group software-engineering project exploring online banking workflows, database design, application architecture, and software delivery documentation.
+
+> **Attribution:** This repository contains work from a **group assignment** (CS451, Group 6). It should be understood as collaborative coursework, not an individually authored commercial banking product or an official Commerce Bank service.
+
+## Repository overview
+
+| Folder / file | Description |
+| --- | --- |
+| [Online Banking](Online%20Banking) | ASP.NET Core MVC solution and SQL project data |
+| [Database](Database) | Database definitions, relationship diagrams, and SQL scripts |
+| [Documentation](Documentation) | Architecture, requirements, project planning, user guides, and testing documents |
+| [Paper Prototypes.pdf](Paper%20Prototypes.pdf) | Early-stage UI prototypes |
+| [Website Prototypes.pdf](Website%20Prototypes.pdf) | Website design prototypes |
+
+## Engineering disciplines represented
+
+- Relational data modeling and SQL schema work.
+- Backend and web UI structure using ASP.NET Core MVC.
+- Software requirements and architectural planning.
+- Iteration planning, testing specifications, and user documentation.
+- Collaboration in a university project setting.
 
 ## Documentation
 
-[Iteration Plans](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/Iteration%20Plans.xlsx)
+The [Documentation](Documentation) directory contains the original **Project Charter**, **Requirements Document**, **Project Plan**, **Architecture Document**, **Test Plan**, **Test Specifications**, **Test Reports**, **User Guide**, and **System Guide**.
 
-[Project Charter](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/Project%20Charter.pdf)
+The historical team's [original project repository](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6) provides further context where still accessible.
 
-[Requirements Document](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/Requirements%20Document.pdf)
+## Running the project
 
-[Project Plan](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/Project%20Plan.pdf)
+The source includes an ASP.NET Core solution at [Online Banking/asp-core-mvc.sln](Online%20Banking/asp-core-mvc.sln) and SQL scripts. A reliable installation would require checking the original .NET SDK target, application settings, database availability, and migrations/schema compatibility.
 
-[Architecture Document](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/Architecture%20Document.pdf)
+**A working deployment and current build have not been validated.** Banking-like example projects must not be deployed with demonstration credentials or connected to real customer financial data.
 
-[Test Plan](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/Test%20Plan.pdf)
+## Historical context
 
-[Test Specifications](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/Test%20Specifications.pdf)
+Preserved as evidence of collaborative software development and documentation. It is not affiliated with or endorsed by Commerce Bank.
 
-[Test Reports](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/Test%20Reports.pdf)
-
-[User Guide](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/User%20Guide.pdf)
-
-[System Guide](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/System%20Guide.pdf)
-
-[Presentation Powerpoint](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6/blob/master/Documentation/Presentation%20Outline.pptx)
-
-
-## Google Drive Links
-
-[Iteration Plans](https://docs.google.com/spreadsheets/d/1YAR9Iea_5enjX4G4YDLlGHYFrZbsqV76wZoHmMZoQMc/edit?usp=sharing)
-
-[Project Charter](https://docs.google.com/document/d/1GtEqOB5XNyh_RKn_gBCjnqq-yKZdxI4O2_L9o3AYf9w/edit?usp=sharing)
-
-[Requirements Document](https://drive.google.com/file/d/1yZXbY7hK4JPU1Sv_wsdsOhc1OIvK-RKF/view?usp=sharing)
-
-[Project Plan](https://drive.google.com/file/d/1uFflc3Nxn3kO5gckeC0MrsP_tgIqi7AX/view)
-
-[Architecture Document](https://drive.google.com/file/d/1GkOJ_-omDaYag-p-Z-son-h3iK5hVcDw/view?usp=sharing)
-
-[Test Plan](https://drive.google.com/file/d/1SVcRI6LczRg_jF0-mU4kh52v7ViA4-A8/view?usp=sharing)
-
-[Test Specifications](https://drive.google.com/file/d/1YSL1BsYmaOzfYBZlw8t3bEqo5Jzaiuap/view?usp=sharing)
-
-[Test Reports](https://drive.google.com/file/d/1XmQujSJrYXVmGS4-pVgxk3h_dJ0Rbsqi/view?usp=sharing)
-
-[User Guide](https://drive.google.com/file/d/15wKtOoeTry8uljaAgT7lrNLok01deabV/view?usp=sharing)
-
-[System Guide](https://drive.google.com/file/d/1bo1mE6p0OPcyQX5MkS1Yy8pkrJOvtg9j/view?usp=sharing)
-
-[Presentation Powerpoint](https://drive.google.com/file/d/18650KRkbln2A08B1moI_k008X23eogEW/view?usp=sharing)
-
+[GitHub profile](https://github.com/tariksalay) · [Portfolio](https://tariksalay.github.io/)
