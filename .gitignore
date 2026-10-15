@@ -34,3 +34,7 @@ bld/
 # NUNIT
 *.VisualState.xml
 TestResult.xml
+# Local credentials and exported reports
+.env
+appsettings.Local.json
+exports/

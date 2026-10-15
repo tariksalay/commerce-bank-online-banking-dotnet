@@ -1,43 +1,37 @@
-# Online Banking Web Application — University Team Project
+# Online Banking Coursework: MVC, Data, and Reporting
 
-**ASP.NET Core MVC · SQL · Web Application Design · Requirements & Test Documentation**
+**ASP.NET Core MVC · C# · MySQL · Razor · EPPlus · Team software engineering**
 
-A university group software-engineering project exploring online banking workflows, database design, application architecture, and software delivery documentation.
+A university team project exploring account views, transaction history, configurable alert rules, and spreadsheet reporting. The repository combines application source, SQL artifacts, prototypes, and original delivery documentation.
 
-> **Attribution:** This repository contains work from a **group assignment** (CS451, Group 6). It should be understood as collaborative coursework, not an individually authored commercial banking product or an official Commerce Bank service.
+## What this project demonstrates
 
-## Repository overview
+- MVC boundaries between controllers, models, view models, and Razor views.
+- Stored-procedure-based data access and report generation.
+- Collaborative requirements, architecture, planning, and test documentation.
 
-| Folder / file | Description |
+## Start here
+
+| Read | Use it for |
 | --- | --- |
-| [Online Banking](Online%20Banking) | ASP.NET Core MVC solution and SQL project data |
-| [Database](Database) | Database definitions, relationship diagrams, and SQL scripts |
-| [Documentation](Documentation) | Architecture, requirements, project planning, user guides, and testing documents |
-| [Paper Prototypes.pdf](Paper%20Prototypes.pdf) | Early-stage UI prototypes |
-| [Website Prototypes.pdf](Website%20Prototypes.pdf) | Website design prototypes |
+| [Project walkthrough](docs/PROJECT_GUIDE.md) | Purpose, workflow, repository map, and a concrete example |
+| [Code and artifact reference](docs/CODE_REFERENCE.md) | Important files, functions, classes, and their responsibilities |
+| [Development guide](docs/DEVELOPMENT.md) | Setup, configuration, commands, tests, and remaining limitations |
 
-## Engineering disciplines represented
+## Explore locally
 
-- Relational data modeling and SQL schema work.
-- Backend and web UI structure using ASP.NET Core MVC.
-- Software requirements and architectural planning.
-- Iteration planning, testing specifications, and user documentation.
-- Collaboration in a university project setting.
+Start with the [project walkthrough](docs/PROJECT_GUIDE.md) and the original solution at [Online Banking/asp-core-mvc.sln](Online%20Banking/asp-core-mvc.sln).
 
-## Documentation
+A compatible legacy .NET environment, demo MySQL schema/stored procedures, and local connection configuration are required. See the development guide before attempting a build.
 
-The [Documentation](Documentation) directory contains the original **Project Charter**, **Requirements Document**, **Project Plan**, **Architecture Document**, **Test Plan**, **Test Specifications**, **Test Reports**, **User Guide**, and **System Guide**.
+## Validation and scope
 
-The historical team's [original project repository](https://github.com/umkc-cs-451-2019-fall/semester-group-assignment-group-6) provides further context where still accessible.
+The resource-handling changes passed C# syntax parsing and the project XML was inspected. A .NET build and database integration were not verified. The target remains ASP.NET Core 2.2. This collaborative coursework is not a deployed banking service and is not affiliated with or endorsed by Commerce Bank.
 
-## Running the project
 
-The source includes an ASP.NET Core solution at [Online Banking/asp-core-mvc.sln](Online%20Banking/asp-core-mvc.sln) and SQL scripts. A reliable installation would require checking the original .NET SDK target, application settings, database availability, and migrations/schema compatibility.
 
-**A working deployment and current build have not been validated.** Banking-like example projects must not be deployed with demonstration credentials or connected to real customer financial data.
+---
 
-## Historical context
+[GitHub profile](https://github.com/tariksalay) · [Portfolio](https://tariksalay.github.io/) · [Earlier README](README_HISTORY.md)
 
-Preserved as evidence of collaborative software development and documentation. It is not affiliated with or endorsed by Commerce Bank.
-
-[GitHub profile](https://github.com/tariksalay) · [Portfolio](https://tariksalay.github.io/)
+The earlier README is preserved as historical context; the guides above describe this branch's implementation.
