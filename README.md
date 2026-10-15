@@ -26,7 +26,7 @@ A compatible legacy .NET environment, demo MySQL schema/stored procedures, and l
 
 ## Validation and scope
 
-The resource-handling changes passed C# syntax parsing and the project XML was inspected. A .NET build and database integration were not verified. The target remains ASP.NET Core 2.2. This collaborative coursework is not a deployed banking service and is not affiliated with or endorsed by Commerce Bank.
+C# syntax and project XML checks passed. On October 15, 2026, package restore and the solution build succeeded with .NET SDK 8.0.426, including compilation of the Razor views. The target remains ASP.NET Core 2.2; the build reports an unsupported-framework warning and known dependency vulnerability warnings. Application runtime and MySQL integration remain unverified. See the [validation details](docs/DEVELOPMENT.md). This collaborative coursework is not a deployed banking service and is not affiliated with or endorsed by Commerce Bank.
 
 
 
